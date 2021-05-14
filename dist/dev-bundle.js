@@ -35,10 +35,21 @@ eval("\nmodule.exports = function () {\n\treturn /[\\u001b\\u009b][[()#;?]*(?:[0
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("// Здесь хранятся вызовы и импорты функций из modules\n\n\n//# sourceURL=webpack://Thesis/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/headerOpenModal */ \"./src/modules/headerOpenModal.js\");\n// Здесь хранятся вызовы и импорты функций из modules\n\n\n\n(0,_modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__.default)();\n\n//# sourceURL=webpack://Thesis/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/headerOpenModal.js":
+/*!****************************************!*\
+  !*** ./src/modules/headerOpenModal.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\n\nvar headerOpenModal = function headerOpenModal() {\n  var headerOpenModal = document.getElementById(\"header-open-modal\");\n  var modalBody = document.getElementById(\"modal-body\");\n  var modalClose = document.querySelector(\".modal-close\");\n  var modalOverlay = document.querySelector(\".modal-overlay\");\n  headerOpenModal.addEventListener(\"click\", function () {\n    modalBody.style.display = \"block\";\n    modalOverlay.style.display = \"block\";\n  });\n  modalClose.addEventListener(\"click\", function () {\n    modalBody.style.display = \"none\";\n    modalOverlay.style.display = \"none\";\n  });\n  modalOverlay.addEventListener(\"click\", function () {\n    modalBody.style.display = \"none\";\n    modalOverlay.style.display = \"none\";\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (headerOpenModal);\n\n//# sourceURL=webpack://Thesis/./src/modules/headerOpenModal.js?");
 
 /***/ }),
 
@@ -412,6 +423,18 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	__webpack_require__.i = [];
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
 /******/ 	(() => {
 /******/ 		// This function allow to reference all chunks
@@ -428,7 +451,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("21a88b9b86f119c625fd")
+/******/ 		__webpack_require__.h = () => ("43b395f0b7a9a0ed9b2d")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -491,6 +514,17 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 			script.onerror = onScriptComplete.bind(null, script.onerror);
 /******/ 			script.onload = onScriptComplete.bind(null, script.onload);
 /******/ 			needAttach && document.head.appendChild(script);
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
 /******/ 	
