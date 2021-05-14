@@ -6,3 +6,6 @@ headerOpenModal();
 // Модальное окно не нашли услугу
 import notFoundOpenModal from "./modules/notFoundOpenModal";
 notFoundOpenModal();
+// Скролл к элементам меню
+import menuScroll from "./modules/menuScroll";
+menuScroll();

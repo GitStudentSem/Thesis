@@ -38,7 +38,7 @@ eval("\nmodule.exports = function () {\n\treturn /[\\u001b\\u009b][[()#;?]*(?:[0
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/headerOpenModal */ \"./src/modules/headerOpenModal.js\");\n/* harmony import */ var _modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/notFoundOpenModal */ \"./src/modules/notFoundOpenModal.js\");\n// Здесь хранятся вызовы и импорты функций из modules\n //Модальное окно в шапке\n\n\n(0,_modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__.default)(); // Модальное окно не нашли услугу\n\n\n(0,_modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__.default)();\n\n//# sourceURL=webpack://Thesis/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/headerOpenModal */ \"./src/modules/headerOpenModal.js\");\n/* harmony import */ var _modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/notFoundOpenModal */ \"./src/modules/notFoundOpenModal.js\");\n/* harmony import */ var _modules_menuScroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menuScroll */ \"./src/modules/menuScroll.js\");\n// Здесь хранятся вызовы и импорты функций из modules\n //Модальное окно в шапке\n\n\n(0,_modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__.default)(); // Модальное окно не нашли услугу\n\n\n(0,_modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__.default)(); // Скролл к элементам меню\n\n\n(0,_modules_menuScroll__WEBPACK_IMPORTED_MODULE_2__.default)();\n\n//# sourceURL=webpack://Thesis/./src/index.js?");
 
 /***/ }),
 
@@ -61,6 +61,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _callbackOpenModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./callbackOpenModal */ \"./src/modules/callbackOpenModal.js\");\n\n\nvar headerOpenModal = function headerOpenModal() {\n  var headerOpenButton = document.getElementById(\"header-open-modal\");\n  (0,_callbackOpenModal__WEBPACK_IMPORTED_MODULE_0__.default)(headerOpenButton);\n};\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (headerOpenModal);\n\n//# sourceURL=webpack://Thesis/./src/modules/headerOpenModal.js?");
+
+/***/ }),
+
+/***/ "./src/modules/menuScroll.js":
+/*!***********************************!*\
+  !*** ./src/modules/menuScroll.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\n\nvar menuScroll = function menuScroll() {\n  var scroll = function scroll(scrollLink) {\n    // scrollLink.preventDefault();\n    var id = scrollLink.getAttribute(\"href\");\n    document.querySelector(id).scrollIntoView({\n      behavior: \"smooth\",\n      block: \"start\"\n    });\n  };\n\n  var topMenu = document.querySelector(\".top-menu\");\n  topMenu.addEventListener(\"click\", function (event) {\n    var target = event.target;\n\n    if (target.matches(\"#header-services\")) {\n      console.log(target);\n      event.preventDefault();\n      scroll(target);\n    } else if (target.matches(\"#header-faq\")) {\n      event.preventDefault();\n      scroll(target);\n    } else if (target.matches(\"#header-contacts\")) {\n      event.preventDefault();\n      scroll(target);\n    }\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuScroll);\n\n//# sourceURL=webpack://Thesis/./src/modules/menuScroll.js?");
 
 /***/ }),
 
@@ -473,7 +484,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("14174cd2c8d2304c4557")
+/******/ 		__webpack_require__.h = () => ("354677fd6f9dc1778be2")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
