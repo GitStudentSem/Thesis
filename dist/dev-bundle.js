@@ -38,7 +38,7 @@ eval("\nmodule.exports = function () {\n\treturn /[\\u001b\\u009b][[()#;?]*(?:[0
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/headerOpenModal */ \"./src/modules/headerOpenModal.js\");\n/* harmony import */ var _modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/notFoundOpenModal */ \"./src/modules/notFoundOpenModal.js\");\n/* harmony import */ var _modules_menuScroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menuScroll */ \"./src/modules/menuScroll.js\");\n// Здесь хранятся вызовы и импорты функций из modules\n //Модальное окно в шапке\n\n\n(0,_modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__.default)(); // Модальное окно не нашли услугу\n\n\n(0,_modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__.default)(); // Скролл к элементам меню\n\n\n(0,_modules_menuScroll__WEBPACK_IMPORTED_MODULE_2__.default)();\n\n//# sourceURL=webpack://Thesis/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/headerOpenModal */ \"./src/modules/headerOpenModal.js\");\n/* harmony import */ var _modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/notFoundOpenModal */ \"./src/modules/notFoundOpenModal.js\");\n/* harmony import */ var _modules_menuScroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menuScroll */ \"./src/modules/menuScroll.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/slider */ \"./src/modules/slider.js\");\n// Здесь хранятся вызовы и импорты функций из modules\n //Модальное окно в шапке\n\n\n(0,_modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__.default)(); // Модальное окно не нашли услугу\n\n\n(0,_modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__.default)(); // Скролл к элементам меню\n\n\n(0,_modules_menuScroll__WEBPACK_IMPORTED_MODULE_2__.default)(); // Слайдер на главном экране\n\n\n(0,_modules_slider__WEBPACK_IMPORTED_MODULE_3__.default)();\n\n//# sourceURL=webpack://Thesis/./src/index.js?");
 
 /***/ }),
 
@@ -83,6 +83,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _callbackOpenModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./callbackOpenModal */ \"./src/modules/callbackOpenModal.js\");\n\n\nvar notFoundOpenModal = function notFoundOpenModal() {\n  var notFoundButton = document.getElementById(\"not-found-open-modal\");\n  (0,_callbackOpenModal__WEBPACK_IMPORTED_MODULE_0__.default)(notFoundButton);\n};\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (notFoundOpenModal);\n\n//# sourceURL=webpack://Thesis/./src/modules/notFoundOpenModal.js?");
+
+/***/ }),
+
+/***/ "./src/modules/slider.js":
+/*!*******************************!*\
+  !*** ./src/modules/slider.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\n\nvar slider = function slider() {\n  // Родительский блок слайдера\n  var slider = document.querySelector(\".top-slider\"); // Получаю отдельные слайды\n\n  var slide = document.querySelectorAll(\".item\"); // Счетчик слайдов. Первый слайд нулевой\n\n  var currentSlide = 0; //Функция для автоматического перелистывания слайдов\n\n  var autoPlaySlide = function autoPlaySlide() {\n    // Удаляю класс активного слайда\n    slide[currentSlide].classList.remove(\"item-active\"); // Увеличиваю счетчик слайдов\n\n    currentSlide++; // Если счетчик больше количества слайдов, то возвращаемся к 1 слайду\n\n    if (currentSlide >= slide.length) {\n      currentSlide = 0;\n    } // Добавляю класс активного слайда\n\n\n    slide[currentSlide].classList.add(\"item-active\");\n  }; // Запуск слайдера\n\n\n  var startSlide = function startSlide() {\n    setInterval(autoPlaySlide, 3000);\n  };\n\n  startSlide(); // Остановка слайдера\n\n  var stopSlide = function stopSlide() {};\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (slider);\n\n//# sourceURL=webpack://Thesis/./src/modules/slider.js?");
 
 /***/ }),
 
@@ -484,7 +495,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("354677fd6f9dc1778be2")
+/******/ 		__webpack_require__.h = () => ("5db47f872e216184a5a6")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

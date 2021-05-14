@@ -9,3 +9,6 @@ notFoundOpenModal();
 // Скролл к элементам меню
 import menuScroll from "./modules/menuScroll";
 menuScroll();
+// Слайдер на главном экране
+import slider from "./modules/slider";
+slider();

@@ -830,11 +830,13 @@ hr.white {
   }
   h1.big,
   .title-h1.big {
-    font-size: 80px;
+    font-size: 60px;
     line-height: 1;
     margin-bottom: 50px;
   }
   .top-slider .text {
+    width: 80%;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 1.6;
   }
@@ -859,9 +861,15 @@ hr.white {
   height: 450px;
 }
 .top-slider .item {
+  /*---Здесь можно сделать через opacity, но я не понимаю, почему не работает---*/
+  display: none;
   overflow: hidden;
   height: 450px;
   position: relative;
+}
+.top-slider .item-active {
+  /*---Здесь можно сделать через opacity, но я не понимаю, почему не работает---*/
+  display: block;
 }
 .top-slider .item:before {
   content: "";
@@ -938,8 +946,7 @@ video#video_background {
     height: 520px;
   }
   .top-slider .table {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
@@ -960,6 +967,8 @@ video#video_background {
 
 @media only screen and (min-width: 1240px) {
   .top-slider .text {
+    width: 80%;
+    margin: 0 auto;
     font-size: 24px;
     line-height: 1.6;
   }
