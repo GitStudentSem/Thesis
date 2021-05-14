@@ -38,7 +38,18 @@ eval("\nmodule.exports = function () {\n\treturn /[\\u001b\\u009b][[()#;?]*(?:[0
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/headerOpenModal */ \"./src/modules/headerOpenModal.js\");\n// Здесь хранятся вызовы и импорты функций из modules\n\n\n\n(0,_modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__.default)();\n\n//# sourceURL=webpack://Thesis/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/headerOpenModal */ \"./src/modules/headerOpenModal.js\");\n/* harmony import */ var _modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/notFoundOpenModal */ \"./src/modules/notFoundOpenModal.js\");\n// Здесь хранятся вызовы и импорты функций из modules\n //Модальное окно в шапке\n\n\n(0,_modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__.default)(); // Модальное окно не нашли услугу\n\n\n(0,_modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__.default)();\n\n//# sourceURL=webpack://Thesis/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/callbackOpenModal.js":
+/*!******************************************!*\
+  !*** ./src/modules/callbackOpenModal.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\n\nvar callbackOpenModal = function callbackOpenModal(button) {\n  var modalBody = document.getElementById(\"modal-body\");\n  var modalClose = document.querySelector(\".modal-close\");\n  var modalOverlay = document.querySelector(\".modal-overlay\");\n  button.addEventListener(\"click\", function () {\n    modalBody.style.display = \"block\";\n    modalOverlay.style.display = \"block\";\n  });\n  modalClose.addEventListener(\"click\", function () {\n    modalBody.style.display = \"none\";\n    modalOverlay.style.display = \"none\";\n  });\n  modalOverlay.addEventListener(\"click\", function () {\n    modalBody.style.display = \"none\";\n    modalOverlay.style.display = \"none\";\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (callbackOpenModal);\n\n//# sourceURL=webpack://Thesis/./src/modules/callbackOpenModal.js?");
 
 /***/ }),
 
@@ -49,7 +60,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\n\nvar headerOpenModal = function headerOpenModal() {\n  var headerOpenModal = document.getElementById(\"header-open-modal\");\n  var modalBody = document.getElementById(\"modal-body\");\n  var modalClose = document.querySelector(\".modal-close\");\n  var modalOverlay = document.querySelector(\".modal-overlay\");\n  headerOpenModal.addEventListener(\"click\", function () {\n    modalBody.style.display = \"block\";\n    modalOverlay.style.display = \"block\";\n  });\n  modalClose.addEventListener(\"click\", function () {\n    modalBody.style.display = \"none\";\n    modalOverlay.style.display = \"none\";\n  });\n  modalOverlay.addEventListener(\"click\", function () {\n    modalBody.style.display = \"none\";\n    modalOverlay.style.display = \"none\";\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (headerOpenModal);\n\n//# sourceURL=webpack://Thesis/./src/modules/headerOpenModal.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _callbackOpenModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./callbackOpenModal */ \"./src/modules/callbackOpenModal.js\");\n\n\nvar headerOpenModal = function headerOpenModal() {\n  var headerOpenButton = document.getElementById(\"header-open-modal\");\n  (0,_callbackOpenModal__WEBPACK_IMPORTED_MODULE_0__.default)(headerOpenButton);\n};\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (headerOpenModal);\n\n//# sourceURL=webpack://Thesis/./src/modules/headerOpenModal.js?");
+
+/***/ }),
+
+/***/ "./src/modules/notFoundOpenModal.js":
+/*!******************************************!*\
+  !*** ./src/modules/notFoundOpenModal.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _callbackOpenModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./callbackOpenModal */ \"./src/modules/callbackOpenModal.js\");\n\n\nvar notFoundOpenModal = function notFoundOpenModal() {\n  var notFoundButton = document.getElementById(\"not-found-open-modal\");\n  (0,_callbackOpenModal__WEBPACK_IMPORTED_MODULE_0__.default)(notFoundButton);\n};\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (notFoundOpenModal);\n\n//# sourceURL=webpack://Thesis/./src/modules/notFoundOpenModal.js?");
 
 /***/ }),
 
@@ -451,7 +473,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("43b395f0b7a9a0ed9b2d")
+/******/ 		__webpack_require__.h = () => ("14174cd2c8d2304c4557")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
