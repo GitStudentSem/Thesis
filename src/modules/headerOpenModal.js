@@ -1,7 +1,9 @@
 "use strict";
 const headerOpenModal = () => {
   const headerOpenButton = document.getElementById("header-open-modal");
-  callbackOpenModal(headerOpenButton);
+  headerOpenButton.addEventListener("click", () => {
+    callbackOpenModal();
+  });
 };
 import callbackOpenModal from "./callbackOpenModal";
 export default headerOpenModal;

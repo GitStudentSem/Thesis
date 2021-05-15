@@ -21,3 +21,6 @@ servisesOpenModal();
 // Аккордеон
 import accordeon from "./modules/accordeon";
 accordeon();
+// Мобильное меню
+import mobileMenu from "./modules/mobileMenu";
+mobileMenu();

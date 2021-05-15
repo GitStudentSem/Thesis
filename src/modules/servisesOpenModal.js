@@ -2,7 +2,9 @@
 const servisesOpenModal = () => {
   const servisesButton = document.querySelectorAll(".services-modal");
   servisesButton.forEach((item) => {
-    callbackOpenModal(item);
+    item.addEventListener("click", () => {
+      callbackOpenModal();
+    });
   });
 };
 import callbackOpenModal from "./callbackOpenModal";
