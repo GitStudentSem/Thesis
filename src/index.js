@@ -18,3 +18,6 @@ goTop();
 // Модальное окно с карточками
 import servisesOpenModal from "./modules/servisesOpenModal";
 servisesOpenModal();
+// Аккордеон
+import accordeon from "./modules/accordeon";
+accordeon();

@@ -38,7 +38,18 @@ eval("\nmodule.exports = function () {\n\treturn /[\\u001b\\u009b][[()#;?]*(?:[0
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/headerOpenModal */ \"./src/modules/headerOpenModal.js\");\n/* harmony import */ var _modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/notFoundOpenModal */ \"./src/modules/notFoundOpenModal.js\");\n/* harmony import */ var _modules_menuScroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menuScroll */ \"./src/modules/menuScroll.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/slider */ \"./src/modules/slider.js\");\n/* harmony import */ var _modules_goTop__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/goTop */ \"./src/modules/goTop.js\");\n/* harmony import */ var _modules_servisesOpenModal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/servisesOpenModal */ \"./src/modules/servisesOpenModal.js\");\n// Здесь хранятся вызовы и импорты функций из modules\n //Модальное окно в шапке\n\n\n(0,_modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__.default)(); // Модальное окно не нашли услугу\n\n\n(0,_modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__.default)(); // Скролл к элементам меню\n\n\n(0,_modules_menuScroll__WEBPACK_IMPORTED_MODULE_2__.default)(); // Слайдер на главном экране\n\n\n(0,_modules_slider__WEBPACK_IMPORTED_MODULE_3__.default)(); // Отслеживаю скролл\n\n\n(0,_modules_goTop__WEBPACK_IMPORTED_MODULE_4__.default)(); // Модальное окно с карточками\n\n\n(0,_modules_servisesOpenModal__WEBPACK_IMPORTED_MODULE_5__.default)();\n\n//# sourceURL=webpack://Thesis/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/headerOpenModal */ \"./src/modules/headerOpenModal.js\");\n/* harmony import */ var _modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/notFoundOpenModal */ \"./src/modules/notFoundOpenModal.js\");\n/* harmony import */ var _modules_menuScroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/menuScroll */ \"./src/modules/menuScroll.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/slider */ \"./src/modules/slider.js\");\n/* harmony import */ var _modules_goTop__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/goTop */ \"./src/modules/goTop.js\");\n/* harmony import */ var _modules_servisesOpenModal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/servisesOpenModal */ \"./src/modules/servisesOpenModal.js\");\n/* harmony import */ var _modules_accordeon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/accordeon */ \"./src/modules/accordeon.js\");\n// Здесь хранятся вызовы и импорты функций из modules\n //Модальное окно в шапке\n\n\n(0,_modules_headerOpenModal__WEBPACK_IMPORTED_MODULE_0__.default)(); // Модальное окно не нашли услугу\n\n\n(0,_modules_notFoundOpenModal__WEBPACK_IMPORTED_MODULE_1__.default)(); // Скролл к элементам меню\n\n\n(0,_modules_menuScroll__WEBPACK_IMPORTED_MODULE_2__.default)(); // Слайдер на главном экране\n\n\n(0,_modules_slider__WEBPACK_IMPORTED_MODULE_3__.default)(); // Отслеживаю скролл\n\n\n(0,_modules_goTop__WEBPACK_IMPORTED_MODULE_4__.default)(); // Модальное окно с карточками\n\n\n(0,_modules_servisesOpenModal__WEBPACK_IMPORTED_MODULE_5__.default)(); // Аккордеон\n\n\n(0,_modules_accordeon__WEBPACK_IMPORTED_MODULE_6__.default)();\n\n//# sourceURL=webpack://Thesis/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/accordeon.js":
+/*!**********************************!*\
+  !*** ./src/modules/accordeon.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\n\nvar accordeon = function accordeon() {\n  var accordeonItems = document.querySelectorAll(\".accordeon-item\");\n  accordeonItems.forEach(function (item) {\n    var title = item.children[0];\n    var content = item.children[1];\n    item.addEventListener(\"click\", function () {\n      if (item.classList.contains(\"active\")) {\n        item.classList.remove(\"active\");\n        content.classList.remove(\"accordeon-content-active\");\n        title.classList.remove(\"accordeon-title-active\");\n      } else {\n        item.classList.add(\"active\");\n        content.classList.add(\"accordeon-content-active\");\n        title.classList.add(\"accordeon-title-active\");\n      }\n    });\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (accordeon);\n\n//# sourceURL=webpack://Thesis/./src/modules/accordeon.js?");
 
 /***/ }),
 
@@ -528,7 +539,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("c78faaeb625a14a5ca5b")
+/******/ 		__webpack_require__.h = () => ("2f37a7554fc70a1f13a5")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
