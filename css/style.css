@@ -1220,6 +1220,13 @@ video#video_background {
 .services-elements > .row > hr:nth-of-type(2n) {
   clear: both;
 }
+.slider-track {
+  display: flex;
+  transition: 0.5s;
+}
+.slider-container {
+  overflow: hidden;
+}
 .services-elements .element-price {
   margin-bottom: 15px;
   font-weight: bold;

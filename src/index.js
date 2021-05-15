@@ -24,3 +24,6 @@ accordeon();
 // Мобильное меню
 import mobileMenu from "./modules/mobileMenu";
 mobileMenu();
+// Карусель
+import carousel from "./modules/carousel";
+carousel();
