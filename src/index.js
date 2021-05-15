@@ -12,3 +12,9 @@ menuScroll();
 // Слайдер на главном экране
 import slider from "./modules/slider";
 slider();
+// Отслеживаю скролл
+import goTop from "./modules/goTop";
+goTop();
+// Модальное окно с карточками
+import servisesOpenModal from "./modules/servisesOpenModal";
+servisesOpenModal();
