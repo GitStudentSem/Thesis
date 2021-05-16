@@ -17,6 +17,7 @@ const sendForm = () => {
       const modalOverlay = document.querySelector(".modal-overlay");
       modalBody.style.display = "none";
       modalOverlay.style.display = "none";
+      window.onscroll = () => {};
     };
 
     const formData = new FormData(form);

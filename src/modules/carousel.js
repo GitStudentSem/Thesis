@@ -17,7 +17,8 @@ const carousel = () => {
   const btnNext = document.querySelector(".arrow-right");
   const items = document.querySelectorAll(".slider-item");
   const itemsCount = items.length;
-  const itemWidth = container.clientWidth / slidesToShow;
+  // +2 что бы убрать торчащие по краям полоски соседних слайдов
+  const itemWidth = container.clientWidth / slidesToShow + 2;
   const movePosition = slidesToScroll * itemWidth;
 
   items.forEach((item) => {

@@ -272,6 +272,7 @@ a.absolute {
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
   z-index: 90;
+  cursor: pointer;
 }
 .modal-close {
   width: 25px;
@@ -1031,13 +1032,17 @@ video#video_background {
   background: url(../images/minus.png) 50% 50% no-repeat #333;
 }
 .accordeon-content-item {
-  display: none;
+  height: 0px;
+  opacity: 0;
+  transition: 0.3s;
 }
 .accordeon-content-active {
-  display: block;
+  height: auto;
+  opacity: 1;
   padding: 20px;
   font-size: 13px;
   color: #888885;
+  transition: 0.3s;
 }
 .accordeon .element .title:hover:before {
   background-color: #333;
