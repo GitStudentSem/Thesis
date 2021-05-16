@@ -30,3 +30,6 @@ validateForm();
 // Валидация данных в форме
 import carousel from "./modules/carousel";
 carousel();
+// Отправка данных на сервер
+import sendForm from "./modules/sendForm";
+sendForm();
