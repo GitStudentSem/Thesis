@@ -47,9 +47,19 @@ const carousel = () => {
   const setPosition = () => {
     track.style.transform = `translateX(${position}px)`;
   };
+
   const checkBtns = () => {
-    btnPrev.disabled = position === 0;
-    btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
+    if (position === 0) {
+      btnPrev.style.opacity = "0.5";
+    } else {
+      btnPrev.style.opacity = "1";
+    }
+
+    if (position <= -(itemsCount - slidesToShow) * itemWidth) {
+      btnNext.style.opacity = "0.5";
+    } else {
+      btnNext.style.opacity = "1";
+    }
   };
   checkBtns();
 };
