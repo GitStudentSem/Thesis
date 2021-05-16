@@ -13,7 +13,6 @@ const accordeon = () => {
         title.classList.remove("accordeon-title-active");
       } else {
         // Если класса active нет, то запускается цикл, который удаляет этот класс с другого активного элемента
-
         accordeonItems.forEach((elem) => {
           const title = elem.children[0];
           const content = elem.children[1];

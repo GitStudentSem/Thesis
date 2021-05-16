@@ -24,6 +24,9 @@ accordeon();
 // Мобильное меню
 import mobileMenu from "./modules/mobileMenu";
 mobileMenu();
-// Карусель
+// Валидация данных в форме
+import validateForm from "./modules/validateForm";
+validateForm();
+// Валидация данных в форме
 import carousel from "./modules/carousel";
 carousel();
