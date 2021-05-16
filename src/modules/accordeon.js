@@ -4,12 +4,24 @@ const accordeon = () => {
   accordeonItems.forEach((item) => {
     const title = item.children[0];
     const content = item.children[1];
+
     item.addEventListener("click", () => {
+      // Запускается цикл и при клике идет проверка есть ли класс active. Если он есть то он удаляется
       if (item.classList.contains("active")) {
         item.classList.remove("active");
         content.classList.remove("accordeon-content-active");
         title.classList.remove("accordeon-title-active");
       } else {
+        // Если класса active нет, то запускается цикл, который удаляет этот класс с другого активного элемента
+
+        accordeonItems.forEach((elem) => {
+          const title = elem.children[0];
+          const content = elem.children[1];
+          elem.classList.remove("active");
+          content.classList.remove("accordeon-content-active");
+          title.classList.remove("accordeon-title-active");
+        });
+        // Добавляет класс active  на новый элемент элемент
         item.classList.add("active");
         content.classList.add("accordeon-content-active");
         title.classList.add("accordeon-title-active");
