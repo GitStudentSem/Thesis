@@ -1,14 +1,16 @@
 "use strict";
-const carousel = () => {
-  let slidesToShow = 3;
 
+const carousel = () => {
   let widthWind = document.querySelector("body").offsetWidth;
+  let slidesToShow;
   if (widthWind <= 766) {
     slidesToShow = 1;
   } else if (widthWind <= 1240) {
     slidesToShow = 2;
+  } else {
+    slidesToShow = 3;
   }
-
+  //////////////
   let position = 0;
   const slidesToScroll = 1;
   const container = document.querySelector(".slider-container");
@@ -63,4 +65,5 @@ const carousel = () => {
   };
   checkBtns();
 };
+window.addEventListener("resize", carousel);
 export default carousel;
