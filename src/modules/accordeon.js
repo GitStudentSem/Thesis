@@ -5,9 +5,13 @@ const accordeon = () => {
     const title = item.children[0];
     const content = item.children[1];
 
-    item.addEventListener("click", () => {
-      // Запускается цикл и при клике идет проверка есть ли класс active. Если он есть то он удаляется
+    item.addEventListener("click", (event) => {
+      let target = event.target;
+      if (target.matches(".accordeon-content-active")) {
+        return;
+      }
       if (item.classList.contains("active")) {
+        // Запускается цикл и при клике идет проверка есть ли класс active. Если он есть то он удаляется
         item.classList.remove("active");
         content.classList.remove("accordeon-content-active");
         title.classList.remove("accordeon-title-active");
