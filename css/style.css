@@ -863,14 +863,18 @@ hr.white {
 }
 .top-slider .item {
   /*---Здесь можно сделать через opacity, но я не понимаю, почему не работает---*/
-  display: none;
+  opacity: 0;
   overflow: hidden;
   height: 450px;
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: 0.5s;
 }
 .top-slider .item-active {
   /*---Здесь можно сделать через opacity, но я не понимаю, почему не работает---*/
-  display: block;
+  opacity: 1;
+  transition: 0.5s;
 }
 .top-slider .item:before {
   content: "";
