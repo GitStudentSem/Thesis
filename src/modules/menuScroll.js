@@ -1,4 +1,4 @@
-"use strict";
+
 const menuScroll = () => {
   const topMenu = document.querySelector(".top-menu");
   topMenu.addEventListener("click", (event) => {

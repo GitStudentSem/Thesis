@@ -1,4 +1,4 @@
-"use strict";
+
 const mobileMenu = () => {
   const mobileMenuContent = document.querySelector(".mobile-menu");
   const burger = document.querySelector(".mob-menu-btn");

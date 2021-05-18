@@ -1,4 +1,3 @@
-"use strict";
 const goTop = () => {
   window.addEventListener("scroll", () => {
     // Получаю кнопку

@@ -1,4 +1,4 @@
-"use strict";
+
 const servisesOpenModal = () => {
   const servisesButton = document.querySelectorAll(".services-modal");
   servisesButton.forEach((item) => {

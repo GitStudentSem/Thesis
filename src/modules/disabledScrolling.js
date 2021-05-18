@@ -1,5 +1,3 @@
-"use strict";
-
 const disableScrolling = () => {
   let x = window.scrollX;
   let y = window.scrollY;

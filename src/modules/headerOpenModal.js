@@ -1,4 +1,4 @@
-"use strict";
+
 const headerOpenModal = () => {
   const headerOpenButton = document.getElementById("header-open-modal");
   headerOpenButton.addEventListener("click", () => {

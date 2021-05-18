@@ -1,4 +1,3 @@
-"use strict";
 const slider = () => {
   // Родительский блок слайдера
   const slider = document.querySelector(".top-slider");

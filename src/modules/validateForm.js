@@ -1,4 +1,3 @@
-"use strict";
 const validateForm = () => {
   const formName = document.getElementById("form-name");
 

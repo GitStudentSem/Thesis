@@ -1,4 +1,4 @@
-"use strict";
+
 const sendForm = () => {
   const errorMessage = "Что-то пошло не так...";
   const loadMessage = "Загрузка...";
@@ -23,7 +23,6 @@ const sendForm = () => {
     const formData = new FormData(form);
     let body = {};
 
-    // Что это такое?!
     for (let val of formData.entries()) {
       body[val[0]] = val[1];
     }

@@ -1,4 +1,3 @@
-"use strict";
 const accordeon = () => {
   const accordeonItems = document.querySelectorAll(".accordeon-item");
   accordeonItems.forEach((item) => {

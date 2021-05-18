@@ -1,5 +1,3 @@
-"use strict";
-
 const carousel = () => {
   let widthWind = document.querySelector("body").offsetWidth;
   let slidesToShow;

@@ -1,5 +1,4 @@
-"use strict";
-const callbackOpenModal = (button) => {
+const callbackOpenModal = () => {
   const modalBody = document.getElementById("modal-body");
   const modalOverlay = document.querySelector(".modal-overlay");
 
