@@ -862,7 +862,6 @@ hr.white {
   height: 450px;
 }
 .top-slider .item {
-  /*---Здесь можно сделать через opacity, но я не понимаю, почему не работает---*/
   opacity: 0;
   overflow: hidden;
   height: 450px;
@@ -872,7 +871,6 @@ hr.white {
   transition: 0.5s;
 }
 .top-slider .item-active {
-  /*---Здесь можно сделать через opacity, но я не понимаю, почему не работает---*/
   opacity: 1;
   transition: 0.5s;
 }
